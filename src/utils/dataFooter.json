@@ -1,0 +1,80 @@
+{
+  "infoEpg": [
+    {
+      "label": "Los Rosales s/n, San Juan Bautista, Maynas, Loreto, Perú.",
+      "link": "/#"
+    },
+    {
+      "label": "Telefono:(5165) 261101.",
+      "link": "/#"
+    },
+    {
+      "label": "postgrado@unapiquitos.edu.pe.",
+      "link": "/#"
+    }
+  ],
+  "mapSite": [
+    {
+      "label": "Inicio",
+      "link": "/"
+    },
+    {
+      "label": "Sobre la escuela",
+      "link": "/sobre-escuela"
+    },
+    {
+      "label": "Doctorados",
+      "link": "/programas/doctorados"
+    },
+    {
+      "label": "Maestrías",
+      "link": "programas/maestrias"
+    },
+    {
+      "label": "Formación continua",
+      "link": "programas/formacion-continua"
+    },
+    {
+      "label": "Servicios para estudiantes",
+      "link": "/beneficios-estudiantes"
+    },
+    {
+      "label": "Procesos para estudiantes",
+      "link": "/procesos-estudiantes"
+    },
+    {
+      "label": "Admisión",
+      "link": "/admision"
+    },
+    {
+      "label": "Lista de docentes",
+      "link": "/lista-docentes"
+    },
+    {
+      "label": "Recursos para docentes",
+      "link": "/rescursos-docentes"
+    },
+    {
+      "label": "Noticias y eventos",
+      "link": "/publicaciones"
+    },
+    {
+      "label": "Investigaciones",
+      "link": "investigaciones"
+    }
+  ],
+  "moreEpg": [
+    {
+      "label": "Biblioteca",
+      "link": "/#"
+    },
+    {
+      "label": "Servicio social",
+      "link": "/#"
+    },
+    {
+      "label": "Otros",
+      "link": "/#"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "staffAdmin": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "role": "Admin",
+      "urlProfile": "https://example.com/johndoe",
+      "faculty": "N/A"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "role": "Admin",
+      "urlProfile": "https://example.com/janesmith",
+      "faculty": "N/A"
+    },
+    {
+      "id": 3,
+      "name": "Bob Johnson",
+      "role": "Admin",
+      "urlProfile": "https://example.com/bobjohnson",
+      "faculty": "N/A"
+    },
+    {
+      "id": 4,
+      "name": "Sarah Lee",
+      "role": "Admin",
+      "urlProfile": "https://example.com/sarahlee",
+      "faculty": "N/A"
+    },
+    {
+      "id": 5,
+      "name": "David Kim",
+      "role": "Admin",
+      "urlProfile": "https://example.com/davidkim",
+      "faculty": "N/A"
+    },
+    {
+      "id": 6,
+      "name": "Emily Chen",
+      "role": "Admin",
+      "urlProfile": "https://example.com/emilychen",
+      "faculty": "N/A"
+    },
+    {
+      "id": 7,
+      "name": "Michael Wong",
+      "role": "Admin",
+      "urlProfile": "https://example.com/michaelwong",
+      "faculty": "N/A"
+    },
+    {
+      "id": 8,
+      "name": "Karen Nguyen",
+      "role": "Admin",
+      "urlProfile": "https://example.com/karennguyen",
+      "faculty": "N/A"
+    },
+    {
+      "id": 9,
+      "name": "Alex Rodriguez",
+      "role": "Admin",
+      "urlProfile": "https://example.com/alexrodriguez",
+      "faculty": "N/A"
+    },
+    {
+      "id": 10,
+      "name": "Maria Hernandez",
+      "role": "Admin",
+      "urlProfile": "https://example.com/mariahernandez",
+      "faculty": "N/A"
+    }
+  ],
+  "staffProgram": [
+    {
+      "id": 1,
+      "name": "Dr. Roberto Pezo Díaz",
+      "role": "Director de la Unidad de Postgrado de la Facultad de Ciencias Biológicas",
+      "urlProfile": "https://example.com/johnsmith",
+      "faculty": "FACULTAD DE CIENCIAS BIOLÓGICAS"
+    },
+    {
+      "id": 2,
+      "name": "Dr. Enrique Ríos Isern",
+      "role": "PCoordinador en doctorado en Ciencias con mención en Ecología Amazónica",
+      "urlProfile": "https://example.com/janekim",
+      "faculty": "FACULTAD DE CIENCIAS BIOLÓGICAS"
+    },
+    {
+      "id": 3,
+      "name": "Dr. Jaime Eduardo Meléndez Aspajo",
+      "role": "Director de la Unidad de Postgrado de la Facultad de Derecho y Ciencias Políticas",
+      "urlProfile": "https://example.com/boblee",
+      "faculty": "Mechanical Engineering"
+    },
+    {
+      "id": 4,
+      "name": "Dr. Raúl Quevedo Guevara",
+      "role": "Director de la Unidad de Postgrado de la Facultad de Derecho y Ciencias Políticas",
+      "urlProfile": "https://example.com/sarahchen",
+      "faculty": "FACULTAD DE DERECHO Y CIENCIAS POLÍTICAS"
+    },
+    {
+      "id": 5,
+      "name": "Ing. Christian Arévalo Jesús",
+      "role": "Program Staff",
+      "urlProfile": "https://example.com/davidnguyen",
+      "faculty": "FACULTAD DE INGENIERÍA DE SISTEMAS E INFORMÁTICA"
+    },
+    {
+      "id": 6,
+      "name": "Emily Rodriguez",
+      "role": "Program Staff",
+      "urlProfile": "https://example.com/emilyrodriguez",
+      "faculty": "Mechanical Engineering"
+    },
+    {
+      "id": 7,
+      "name": "Michael Hernandez",
+      "role": "Program Staff",
+      "urlProfile": "https://example.com/michaelhernandez",
+      "faculty": "Computer Science"
+    },
+    {
+      "id": 8,
+      "name": "Karen Kim",
+      "role": "Program Staff",
+      "urlProfile": "https://example.com/karenkim",
+      "faculty": "Electrical Engineering"
+    }
+  ]
+}

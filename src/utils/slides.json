@@ -1,0 +1,28 @@
+{
+    "slides": [
+        {
+            "id": 1,
+            "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+            "title": "UNAP Launches New Postgraduate Program",
+            "description": "The National University of Arts and Professions (UNAP) is excited to announce the launch of a groundbreaking postgraduate program. This innovative program aims to provide students with advanced knowledge and skills in their respective fields, preparing them for leadership roles in today's dynamic professional landscape."
+        },
+        {
+            "id": 2,
+            "image": "https://images.unsplash.com/photo-1498079022511-d15614cb1c02?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+            "title": "Research Excellence at UNAP",
+            "description": "UNAP continues to uphold a commitment to research excellence. Our faculty members are actively engaged in cutting-edge research that contributes to advancements in various disciplines. Join us in our pursuit of knowledge and innovation!"
+        },
+        {
+            "id": 3,
+            "image": "https://images.unsplash.com/photo-1627556704283-452301a45fd0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+            "title": "International Collaboration Opportunities",
+            "description": "Explore global perspectives with UNAP's international collaboration initiatives. Our postgraduate programs offer unique opportunities for students to engage in collaborative projects with universities and institutions around the world. Broaden your horizons and make a global impact."
+        },
+        {
+            "id": 4,
+            "image": "https://images.unsplash.com/photo-1495995424756-6a5a3f9e7543?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1776&q=80",
+            "title": "UNAP Alumni Success Stories",
+            "description": "Celebrating the achievements of UNAP alumni! Our graduates have gone on to make significant contributions in their fields. From industry leaders to influential researchers, UNAP alumni are shaping the future. Join our vibrant community of successful professionals."
+        }
+    ]
+}

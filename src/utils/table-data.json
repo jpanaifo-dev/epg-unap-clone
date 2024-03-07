@@ -1,0 +1,80 @@
+{
+    "columns": [
+        {
+            "key": "course",
+            "label": "ASIGNATURA"
+        },
+        {
+            "key": "role",
+            "label": "HT"
+        },
+        {
+            "key": "status",
+            "label": "HP"
+        },
+        {
+            "key": "credits",
+            "label": "C"
+        }
+    ],
+    "ciclos": [
+        {
+            "name": "CICLO-I",
+            "courses": [
+                {
+                    "course": "Seminario de tesis I",
+                    "role": "4",
+                    "status": "4",
+                    "credits": "4"
+                },
+                {
+                    "course": "Seminario de tesis II",
+                    "role": "4",
+                    "status": "4",
+                    "credits": "4"
+                },
+                {
+                    "course": "Seminario de tesis III",
+                    "role": "4",
+                    "status": "4",
+                    "credits": "4"
+                },
+                {
+                    "course": "Seminario de tesis IV",
+                    "role": "4",
+                    "status": "4",
+                    "credits": "4"
+                }
+            ]
+        },
+        {
+            "name": "CICLO-II",
+            "courses": [
+                {
+                    "course": "Seminario de tesis I",
+                    "role": "4",
+                    "status": "4",
+                    "credits": "4"
+                },
+                {
+                    "course": "Seminario de tesis II",
+                    "role": "4",
+                    "status": "4",
+                    "credits": "4"
+                },
+                {
+                    "course": "Seminario de tesis III",
+                    "role": "4",
+                    "status": "4",
+                    "credits": "4"
+                },
+                {
+                    "course": "Seminario de tesis IV",
+                    "role": "4",
+                    "status": "4",
+                    "credits": "4"
+                }
+            ]
+        }
+    ]
+}
