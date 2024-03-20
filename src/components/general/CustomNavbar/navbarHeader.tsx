@@ -11,9 +11,10 @@ import {
   NavbarMenuItem,
   NavbarMenuToggle,
   Image,
-  Button
+  Button,
+  Divider
 } from '@nextui-org/react'
-import epg from '@/assets/images/epg-logo.svg'
+import epg from '@/assets/images/epg-logo.png'
 import {
   IconChevronDown,
   IconChevronUp,
@@ -92,12 +93,35 @@ export function HeaderNavbar () {
       }}
       isMenuOpen={isMenuOpen}
       className="bg-primary-800 w-full"
-      height="4rem"
+      height="5rem"
       maxWidth="xl"
     >
       <NavbarBrand>
         <Link href="/">
-          <Image src={epg.src} className="min-w-[7rem]" width={140} />
+          <div className='flex items-center gap-2'>
+            {/* <div className='w-[130px]'>
+              <Image src={epg2.src} className="min-w-[8rem]" width={50} />
+            </div> */}
+            {/* <div className='w-[88px]'>
+              <Image src={unap.src} className='min-w-[5.5rem]' width={50} />
+            </div> */}
+              <div className='w-[32px]'>
+                <Image src={epg.src} className='min-w-[2rem]' width={25} />
+              </div>
+              <div>
+                <div className='flex h-[20px] space-x-2 items-center'>
+                  <div className='flex items-center text-white text-sm font-bold gap-4'>
+                    <div className='flex flex-col font-bold text-white leading-tight text-xl'>
+                      <span>Escuela de Postgrado</span>
+                      {/* <span>POSTGRADO UNAP</span> */}
+                    </div>
+                  </div>
+                  <Divider className='bg-white w-[2px]' orientation="vertical" />
+                  <div><span className='text-white font-bold text-xl'>UNAP</span></div>
+                </div>
+                <div className='text-white text-xs'>Programas y Servicios de Posgrado en la UNAP</div>
+              </div>
+          </div>
         </Link>
       </NavbarBrand>
 

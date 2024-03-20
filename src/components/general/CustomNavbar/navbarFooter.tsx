@@ -21,7 +21,7 @@ export function FooterNavbar () {
 
   return (
     <Navbar
-      className="bg-[#BC9A22] md:h-[2.8rem] px-0 w-full top-[4rem] fixed"
+      className="bg-[#BC9A22] md:h-[2.8rem] px-0 w-full top-[5rem] fixed"
       height="0.8rem"
       maxWidth="xl"
     >
@@ -120,7 +120,7 @@ export function FooterNavbar () {
         </NavbarItem>
 
         <NavbarItem>
-          <NextUILink as={Link} href="/publicaciones" className="text-white">
+          <NextUILink as={Link} href="/publicaciones" className="text-white text-[15px]">
             Publicaciones
           </NextUILink>
         </NavbarItem>
