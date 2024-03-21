@@ -103,7 +103,7 @@ export function Sidebar({
           </div>
         </div>
         <div className="lg:w-full sm:px-4">
-          <h2 className="font-bold text-2xl lg:text-3xl mb-3">
+          <h2 className="font-bold text-2xl lg:text-[27px] mb-3">
             {isState ? (
               selectedItem.sectionTitle
             ) : (

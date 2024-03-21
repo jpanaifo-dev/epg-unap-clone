@@ -3,7 +3,7 @@ import { Image } from '@nextui-org/react'
 import { IconSchool, IconAward, IconCircleCheck } from '@tabler/icons-react'
 import epg_img from '@/assets/images/epg.webp'
 
-const presentation_data = [
+const presentationData = [
   {
     title: 'Misión',
     icon: <IconSchool size={38} />,
@@ -27,7 +27,7 @@ const objetivos = [
   'Contribuir al desarrollo de la región amazónica.'
 ]
 
-export default function InfoSection() {
+export default function InfoSection () {
   return (
     <>
       <section className="mb-8">
@@ -62,7 +62,7 @@ export default function InfoSection() {
         </div>
       </section>
       <section className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 items-center">
-        {presentation_data?.map((item, index) => (
+        {presentationData?.map((item, index) => (
           <div className="relative sm:m-2" key={index}>
             <div className="absolute top-0 left-4 sm:left-6 flex items-center gap-4">
               <div className="bg-primary-800 text-white rounded-lg p-1">

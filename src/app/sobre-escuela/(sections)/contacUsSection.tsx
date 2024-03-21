@@ -16,9 +16,9 @@ export default function ContactUsSection () {
             <Input
               label={<h3 className="text-base font-bold">Correo electónico</h3>}
               type="email"
-              size="lg"
+              size="md"
               variant="bordered"
-              placeholder="correo@correo.com"
+              placeholder="ejemplo@gmail.com"
               labelPlacement="outside"
             />
           </div>
@@ -26,7 +26,7 @@ export default function ContactUsSection () {
             <Textarea
               label={<h3 className="text-base font-bold">Mensaje</h3>}
               variant={'bordered'}
-              placeholder="Enter your description"
+              placeholder="Descripción"
               className="col-span-12 md:col-span-6 mb-6 md:mb-0"
               labelPlacement="outside"
             />

@@ -29,7 +29,7 @@ export function Footer () {
                 <Image src={epg.src} className='min-w-[2.6rem]' width={25} />
               </div>
             <div className='font-bold text-[24px] leading-tight'>
-              <h3 >Escuela de Postagrado UNAP</h3>
+              <h3 >Escuela de Postgrado UNAP</h3>
               {/* <h3 >Postgrado UNAP</h3> */}
             </div>
           </div>
@@ -69,7 +69,7 @@ export function Footer () {
               </ul>
             </div>
             <div className="lg:pl-10 border-l-1 border-l-[#244a79]">
-              <h4 className="mb-4">MÁS DE LA EPG-UNAP</h4>
+              <h4 className="mb-2 font-bold text-lg text-white">MÁS DE LA EPG-UNAP</h4>
               <ul className="">
                 {DataFooter.moreEpg.map((item, index) => (
                   <li key={index} className="py-2 hover:text-yellow-400 text-[#d5dce8] text-sm">
