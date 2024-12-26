@@ -3,6 +3,7 @@ import { ComplementaryInfo } from './complementaryInfo'
 import { EvaluationSection } from './evaluationSection'
 import { FinallyInfo } from './finallyInfo'
 import { RequirementsSection } from './requirementsSection'
+import { fetchDocuments } from '@/api'
 
 const data = [
   {
@@ -47,7 +48,11 @@ const data = [
   }
 ]
 
-export default function IndexPage () {
+
+export default async function IndexPage () {
+  try {
+    const documents = await fetchDocuments({ description: '', categoryName: 'admision' })
+
   return (
     <div className="py-6">
       <ol className="relative border-s border-zinc-200 dark:border-zinc-700">
@@ -64,11 +69,19 @@ export default function IndexPage () {
           </li>
         ))}
       </ol>
-      <Downloadable
-        title="Cronograma"
-        fileName="REGLAMENTO-ACADEMICO-POSTGRADO-con-RR-0408-2016-UNAP.pdf"
-        file="https://enlinea.unapiquitos.edu.pe/postgrado/admision/recursos/REGLAMENTO-DE-ADMISION-2018_OCA-CORRECCION_15-10-2018.pdf"
-      />
+      {
+        documents.results.length > 0 ? documents.results.map((document) => (
+          <Downloadable
+            key={document.id}
+            title={document.description}
+            fileName={document.description}
+            file={document.file}
+          />
+        )) : <p>No hay documentos disponibles</p>
+      }
     </div>
   )
+} catch (error) {
+  return <p>Ha ocurrido un error al cargar los documentos. Por favor, intenta de nuevo más tarde.</p>;
+}
 }

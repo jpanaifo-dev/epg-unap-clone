@@ -1,2 +1,5 @@
 export * from './capitalize'
 export * from './constants'
+export * from './functions'
+export * from './calendaryData'
+export * from './studentData'

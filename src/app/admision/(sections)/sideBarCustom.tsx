@@ -14,6 +14,7 @@ export const SidebarCustom = () => {
           href="/programas"
           target="_blank"
           showAnchorIcon
+          radius="sm"
         >
           Ver programas
         </Button>

@@ -2,7 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { Providers } from './providers'
-import { CustomNavbar, Footer } from '@/components/general'
+import { CustomNavbar, Footer } from '@/components'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: 'Escuela de Postgrado UNAP'
 }
 
-export default function RootLayout ({
+export default function RootLayout({
   children
 }: {
   children: React.ReactNode

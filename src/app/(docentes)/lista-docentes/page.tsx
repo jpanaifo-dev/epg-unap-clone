@@ -1,31 +1,22 @@
 'use client'
 
-import { MainSection } from '@/components'
 import FilterTeacherSection from './sections/filterSection'
 import ListTeachersSection from './sections/listTeacherSection'
-import { useProfesor } from '@/hooks/useProfesore'
+import { useProfesor } from '@/hooks'
 import { useEffect } from 'react'
 
-export default function ListTeachersPage () {
-  const { profesores, getListProfesores } = useProfesor()
+export default function ListTeachersPage() {
+  // const { getListProfesores } = useProfesor()
 
-  useEffect(() => {
-    getListProfesores()
-  }, [])
-
-  console.log(profesores)
+  // useEffect(() => {
+  //   getListProfesores()
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, [])
 
   return (
-    <>
-      <MainSection>
-        <h2 className="text-black text-lg font-bold leading-7">
-          Nuestros docentes
-        </h2>
-
-        {/* TODO: Add a PersonFilter component where to pass a person array object to be filtered and rendered */}
-        <FilterTeacherSection />
-        <ListTeachersSection />
-      </MainSection>
-    </>
+    <main className="flex flex-col gap-6">
+      <FilterTeacherSection />
+      <ListTeachersSection />
+    </main>
   )
 }

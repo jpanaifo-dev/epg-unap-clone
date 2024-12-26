@@ -17,7 +17,7 @@ const config: Config = {
       }
     },
     colors: {
-      primary: {
+      blueEpg: {
         DEFAULT: '#0070f3',
         50: '#F3F7FF',
         100: '#D3E9FF',
@@ -30,7 +30,7 @@ const config: Config = {
         800: '#081B5E',
         dark: '#003e9e'
       },
-      secondary: {
+      redEpg: {
         DEFAULT: '#CBB427',
         50: '#FBFBEB',
         100: '#F6F6CB',
@@ -55,7 +55,20 @@ const config: Config = {
         700: '#C11414',
         800: '#A01414',
         900: '#641212'
-      }
+      },
+      grayEpg: {
+        DEFAULT: '#333333',
+        50: '#F2F2F2',
+        100: '#E6E6E6',
+        200: '#CCCCCC',
+        300: '#B3B3B3',
+        400: '#999999',
+        500: '#808080',
+        600: '#666666',
+        700: '#4D4D4D',
+        800: '#333333',
+        900: '#1A1A1A'
+      },
     }
   },
   darkMode: 'class',

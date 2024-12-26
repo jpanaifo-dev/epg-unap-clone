@@ -1,53 +1,48 @@
-import { type Metadata } from 'next'
-import { type IProgram } from '@/types'
-import { getProgramById } from '@/api/client/programs'
-import { IndexSection } from '../(sections)/indexSection'
-
+import { DetailsLayout, ProgramBanner } from '@/components'
+import { fetchProgramDetail, fetchPlanEstudio } from '@/api'
+import { IProgramList, IResApi, IPlanEstudioListApi } from '@/types'
 interface IProps {
-  params: { id: string, tipo: string }
-}
-
-export async function generateMetadata ({ params }: IProps): Promise<Metadata> {
-  const programData: Promise<IProgram> = await getProgramById(
-    parseInt(params.id)
-  )
-  const program = await programData
-
-  return {
-    title: `EPG-UNAP | ${program?.nombre}`,
-    description: `This is the page of ${program?.nombre}`
+  params: {
+    id: string
   }
 }
 
-// export async function getStaticProps({ params }: Params) {
-//   const programData: Promise<IProgram> = await usePrograms().getDataProgramById(
-//     parseInt(params.id)
-//   )
-//   const program = await programData
+export default async function Page(props: IProps) {
+  const { id } = props.params
 
-//   return {
-//     props: {
-//       program
-//     }
-//   }
-// }
+  let dataProgram: IProgramList = {} as IProgramList
+  let dataPlanEstudio: IPlanEstudioListApi[] = [] as IPlanEstudioListApi[]
 
-// export async function generateMetadata({ params }: IProps): Promise<Metadata> {
-//   return {
-//     title: 'Detalles',
-//     description: 'Description'
-//   }
-// }
+  try {
+    const response = await fetchProgramDetail(parseInt(id))
 
-// export const metadata: Metadata = {
-//   title: 'Detalles',
-//   description: 'Description'
-// }
+    if (response.ok) {
+      const data: IResApi<IProgramList> =
+        (await response.json()) as IResApi<IProgramList>
+      dataProgram = data.results[0]
+    }
+  } catch (error) {
+    console.error(error)
+    dataProgram = {} as IProgramList
+  }
 
-export default async function Page ({ params }: IProps) {
+  try {
+    const response = await fetchPlanEstudio({ programa: parseInt(id) })
+
+    if (response.ok) {
+      const data: IPlanEstudioListApi[] =
+        (await response.json()) as IPlanEstudioListApi[]
+      dataPlanEstudio = data
+    }
+  } catch (error) {
+    console.error(error)
+    dataPlanEstudio = [] as IPlanEstudioListApi[]
+  }
+
   return (
-    <>
-      <IndexSection />
-    </>
+    <main className="">
+      <ProgramBanner program={dataProgram} />
+      <DetailsLayout program={dataProgram} planEstudio={dataPlanEstudio} />
+    </main>
   )
 }

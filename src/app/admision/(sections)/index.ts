@@ -3,4 +3,4 @@ import { AboutSection } from './aboutSection'
 import { CalendarySection } from './calendarySection'
 import { SidebarCustom } from './sideBarCustom'
 
-export { BannerCustom, AboutSection, CalendarySection, SidebarCustom }
+export { BannerCustom, AboutSection, CalendarySection as CalendarySection, SidebarCustom }

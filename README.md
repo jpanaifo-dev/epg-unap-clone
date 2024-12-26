@@ -14,6 +14,34 @@ pnpm dev
 bun dev
 ```
 
+## Project Structure
+
+```plaintext
+/
+├── api           # Rutas de la API
+├── assets        # Archivos estáticos (imágenes, fuentes, etc.)
+├── components    # Componentes de UI reutilizables
+├── hooks         # Hooks personalizados de React
+├── providers     # Proveedores de contexto
+├── types         # Tipos de TypeScript
+├── utils         # Funciones utilitarias
+└── app           # Archivos específicos de la aplicación
+    ├── cursos         # Módulo de gestión de cursos
+    ├── portal         # Funcionalidades del portal
+    ├── programs       # Gestión de programas académicos
+    ├── profesor.ts    # Archivo relacionado con la gestión de profesores
+    ├── staff.ts       # Archivo relacionado con la gestión de personal administrativo
+    ├── index.ts       # Punto de entrada de la aplicación
+    ├── components     # Componentes específicos de la aplicación
+    ├── home           # Página principal
+    ├── programs       # Gestión de programas dentro de la aplicación
+    ├── publications   # Gestión de publicaciones
+    ├── servicios      # Módulo de servicios
+    ├── sobre-escuela  # Página "Sobre la Escuela"
+    └── index.ts       # Archivo índice del módulo `app`
+
+```
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.

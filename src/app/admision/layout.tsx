@@ -3,35 +3,36 @@ import { Banner, Sidebar } from '@/components'
 import estudiantes from '@/assets/images/estudiantes-banner.webp'
 import { AboutSection, BannerCustom, SidebarCustom } from './(sections)'
 import { ConvocatoriaProvider } from '@/providers/convocatoriaProvider'
+import { ISidebarItem } from '@/components/core/Sidebar/ISidebarItem'
 
-const items = [
+const items: ISidebarItem[] = [
   {
-    optionName: 'Calendario de admisión',
-    sectionTitle: 'Calendario de admisión',
-    key: 'admision',
+    id: 'admision',
+    label: 'Calendario de admisión',
+    title: 'Calendario de admisión',
     href: '/admision'
   },
   {
-    optionName: 'Procesos para admisión',
-    sectionTitle: 'Guía para el proceso de admisión',
-    key: 'procesos-admision',
+    label: 'Procesos para admisión',
+    title: 'Guía para el proceso de admisión',
+    id: 'procesos-admision',
     href: '/admision/procesos-admision'
   },
   {
-    optionName: 'Journey del postulante',
-    sectionTitle: 'Journey del postulante',
-    key: 'journey-postulante',
+    label: 'Journey del postulante',
+    title: 'Journey del postulante',
+    id: 'journey-postulante',
     href: '/admision/journey-postulante'
   },
   {
-    optionName: 'Convocatorias',
-    sectionTitle: 'Lista de convocatorias',
-    key: 'convocatorias',
+    label: 'Convocatorias',
+    title: 'Lista de convocatorias',
+    id: 'convocatorias',
     href: '/admision/convocatorias'
   }
 ]
 
-export default function AdmisionLayout ({
+export default function AdmisionLayout({
   children
 }: {
   children: React.ReactNode
@@ -43,9 +44,11 @@ export default function AdmisionLayout ({
         image={estudiantes.src}
         customSection={<BannerCustom />}
       />
-      <Sidebar items={items} customSection={<SidebarCustom />}>
-        {children}
-      </Sidebar>
+      <main className="container">
+        <Sidebar items={items} customSection={<SidebarCustom />}>
+          {children}
+        </Sidebar>
+      </main>
       <AboutSection />
     </ConvocatoriaProvider>
   )

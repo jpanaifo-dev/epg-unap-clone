@@ -1,0 +1,23 @@
+{
+  "portal": {
+    "Publication": "portal/publication/",
+    "PublicationList": "portal/publicationlist/",
+    "PublicationFile": "portal/publicationfile/",
+    "PublicationFileList": "portal/publicationfilelist/",
+    "publicationType": "portal/publicationtype/",
+    "Document": "portal/document/",
+    "DocumentCategory": "portal/documentcategory/"
+  },
+  "academicos": {
+    "tipo_programa": "academicos/tipo_programa/",
+    "programas": "academicos/programa/",
+    "programasList": "academicos/programalist/",
+    "facultad": "academicos/facultad/",
+    "facultadList": "academicos/facultadlist/",
+    "plan_estudio": "academicos/details_plan_estudio/"
+  },
+  "core": {
+    "directorio": "core/directory/",
+    "directorioList": "core/directorylist/"
+  }
+}

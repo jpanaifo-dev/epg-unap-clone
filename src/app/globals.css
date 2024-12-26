@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.section-home {
+  @apply py-16 sm:py-28 lg:py-32;
+}
+
+.section {
+  @apply py-6 sm:py-12 lg:py-20;
+}
+
+.section-sidebar {
+  @apply py-6 sm:py-12 lg:py-16;
+}
+
+.title-section {
+  @apply text-2xl sm:text-3xl lg:text-4xl;
+}
+
+/* styles/globals.css */
+.custom-quill {
+  h1 {
+    @apply text-4xl font-bold;
+  }
+
+  h2 {
+    @apply text-3xl font-semibold;
+  }
+
+  h3 {
+    @apply text-2xl font-medium;
+  }
+
+  h4 {
+    @apply text-xl font-medium;
+  }
+
+  p {
+    @apply text-base;
+  }
+
+  strong {
+    @apply font-bold;
+  }
+}

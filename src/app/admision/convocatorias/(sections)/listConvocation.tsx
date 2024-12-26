@@ -1,19 +1,21 @@
 'use client'
 import { useEffect } from 'react'
-import { useConvocatorias } from '@/hooks/useConvocatorias'
+import { useConvocatorias } from '@/hooks'
 import { Accordion, AccordionItem, Input, Link } from '@nextui-org/react'
 export const ListConvocation = () => {
-  const { fetchConvocatorias, convocatorias } = useConvocatorias()
-  useEffect(() => {
-    fetchConvocatorias()
-  }, [])
+  // const { fetchConvocatorias, convocatorias } = useConvocatorias()
+  // useEffect(() => {
+  //   fetchConvocatorias()
+  // // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, [])
+
   return (
     <div>
       <div className="py-4">
         <Input placeholder="Buscar convocatoria" variant="bordered" size="sm" />
       </div>
       <div>
-        <Accordion variant="light">
+        {/* <Accordion variant="light">
           {convocatorias?.map((convocatoria, index) => (
             <AccordionItem
               key={index}
@@ -42,7 +44,7 @@ export const ListConvocation = () => {
               </div>
             </AccordionItem>
           ))}
-        </Accordion>
+        </Accordion> */}
       </div>
     </div>
   )

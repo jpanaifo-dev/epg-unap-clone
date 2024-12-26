@@ -75,8 +75,8 @@ const rules = [
 export function DegreeSection () {
   return (
     <section>
-      <h2 className="text-lg font-bold leading-7">
-        Sobre la optención de grado de maestro
+      <h2 className="text-xl font-bold leading-7">
+        Optención de grado de maestro
       </h2>
       <h5 className="text-base font-normal py-4">
         Para obtener el grado de Maestro se requiere:

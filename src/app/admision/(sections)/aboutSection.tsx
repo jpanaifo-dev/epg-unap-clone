@@ -19,6 +19,7 @@ export const AboutSection = () => {
               color="primary"
               className="mt-4"
               endContent={<IconArrowNarrowRight size={20} />}
+              radius="sm"
             >
               Postula aquí
             </Button>

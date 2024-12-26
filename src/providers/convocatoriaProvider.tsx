@@ -1,6 +1,5 @@
 import { createContext, useContext, useEffect } from 'react'
-import { useConvocatorias } from '@/hooks/useConvocatorias'
-// import { useFilterFromUrl } from '@/hooks/useFilterFromUrl'
+import { useConvocatorias } from '@/hooks'
 
 import { type IConvocatoria } from '@/types'
 
@@ -20,16 +19,17 @@ export const ConvocatoriaProvider = ({
   children: React.ReactNode
 }) => {
   const {
-    fetchConvocatorias,
-    fetchConvocatoriasAbiertas,
+    // fetchConvocatorias,
+    // fetchConvocatoriasAbiertas,
     convocatorias,
     convocatoriasAbiertas,
     loading
   } = useConvocatorias()
 
   useEffect(() => {
-    fetchConvocatoriasAbiertas()
-    fetchConvocatorias()
+    // fetchConvocatoriasAbiertas()
+    // fetchConvocatorias()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (

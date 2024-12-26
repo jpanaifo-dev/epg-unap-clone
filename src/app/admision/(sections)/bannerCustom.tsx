@@ -44,7 +44,7 @@ export const BannerCustom = () => {
       </div>
       <div className="flex flex-col sm:flex-row max-w-[10rem] sm:max-w-none  gap-2 lg:gap-4">
         <div>
-          <Button color="primary" as={Link} showAnchorIcon={true}>
+          <Button color="primary" as={Link} showAnchorIcon={true} radius="sm">
             Más información
           </Button>
         </div>
@@ -53,6 +53,7 @@ export const BannerCustom = () => {
             variant="bordered"
             endContent={<IconDownload size={16} />}
             className="text-white"
+            radius="sm"
           >
             Descargar resultados
           </Button>

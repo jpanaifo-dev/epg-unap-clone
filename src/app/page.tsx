@@ -1,11 +1,24 @@
-'use client'
 
-import HomePage from './home/HomePage'
+import {
+  BannerSection,
+  EventSection,
+  InfoSection,
+  InfoStudents,
+  NewsSection,
+  ProgramSection,
+  ProgramsActiveSection
+} from '@/components'
 
-export default function Home () {
+export default function Home() {
   return (
     <>
-      <HomePage />
+      <BannerSection />
+      <InfoSection />
+      <ProgramsActiveSection />
+      <ProgramSection />
+      <InfoStudents />
+      <EventSection />
+      <NewsSection />
     </>
   )
 }

@@ -1,7 +1,7 @@
 import { Banner } from '@/components'
 import estudiantes from '@/assets/images/estudiantes-banner.webp'
 
-export default function TeacherLayout ({
+export default function TeacherLayout({
   children
 }: {
   children: React.ReactNode
@@ -13,7 +13,7 @@ export default function TeacherLayout ({
         description="La Universidad Nacional de la Amazonía Peruana (UNAP) ofrece una amplia gama de servicios a sus estudiantes, desde servicios de salud hasta servicios de apoyo académico."
         image={estudiantes.src}
       />
-      {children}
+      <main className="container section">{children}</main>
     </>
   )
 }

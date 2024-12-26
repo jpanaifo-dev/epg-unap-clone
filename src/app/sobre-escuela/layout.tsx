@@ -1,48 +1,48 @@
 import estudiantes from '@/assets/images/estudiantes-banner.webp'
 import { Banner, Sidebar } from '@/components'
+import { ISidebarItem } from '@/components/core/Sidebar/ISidebarItem'
 
-const items = [
+const items: ISidebarItem[] = [
   {
-    key: 'presentacion',
-    optionName: 'Presentación',
-    sectionTitle: 'Presentación',
+    id: 'presentacion',
+    label: 'Presentación',
+    title: 'Presentación',
     href: '/sobre-escuela'
   },
   {
-    key: 'historia',
-    optionName: 'Reseña histórica',
-    sectionTitle: 'Reseña histórica',
+    id: 'historia',
+    label: 'Reseña histórica',
+    title: 'Reseña histórica',
     href: '/sobre-escuela/historia'
   },
   {
-    key: 'reglamentos',
-    optionName: 'Reglamentos',
-    sectionTitle: 'Reglamentos',
+    id: 'reglamentos',
+    label: 'Reglamentos',
+    title: 'Reglamentos',
     href: '/sobre-escuela/reglamentos'
   },
   {
-    key: 'autoridades',
-    optionName: 'Autoridades',
-    sectionTitle: 'Autoridades de la EPG - UNAP',
+    id: 'autoridades',
+    label: 'Autoridades',
+    title: 'Autoridades de la EPG - UNAP',
     href: '/sobre-escuela/autoridades'
   },
   {
-    key: 'organigrama',
-    optionName: 'Administrativos',
-    sectionTitle: 'Lista de Administrativos',
-    href: ''
+    id: 'directorio',
+    label: 'Directorio por Facultades',
+    title:
+      'Directores, coordinadores y programas de las unidades de postgrado por facultades',
+    href: '/sobre-escuela/directorio-facultades'
   },
   {
-    key: 'directorio',
-    optionName: 'Directorio por Facultades',
-    sectionTitle:
-      'Directores, coordinadores y programas de las unidades de postgrado por facultades',
-    sectionContent: '',
-    href: ''
+    id: 'organigrama',
+    label: 'Administrativos',
+    title: 'Lista de Administrativos',
+    href: '/sobre-escuela/administrativos'
   }
 ]
 
-export default function LayoutAboutSchool ({
+export default function LayoutAboutSchool({
   children
 }: {
   children: JSX.Element
@@ -54,9 +54,9 @@ export default function LayoutAboutSchool ({
         description="Conoce más sobre la escuela de postgrado de la UNAP"
         image={estudiantes.src}
       />
-      <div>
+      <main className="container">
         <Sidebar items={items}>{children}</Sidebar>
-      </div>
+      </main>
     </>
   )
 }
